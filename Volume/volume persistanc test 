@@ -1,0 +1,14 @@
+docker run --name ubuntutest  -d ubuntu /bin/sh -c "while true; do ping 8.8.8.8; done"
+docker exec -it ubuntutest /bin/bash 
+touch test.txt 
+ls 
+docker stop id 
+docker rm id 
+
+docker run --name ubuntu2  -d ubuntu /bin/sh -c "while true; do ping 8.8.8.8; done"
+
+ls 
+
+file not present 
+
+g

@@ -1,0 +1,1 @@
+docker run --rm -d --network host -v /home/ubuntu/pm:/usr/share/nginx/html --name my_nginx1 nginx

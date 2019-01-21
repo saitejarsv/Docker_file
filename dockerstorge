@@ -1,0 +1,12 @@
+    sudo vi /lib/systemd/system/docker.service
+   change line  ExecStart=/usr/bin/dockerd -g /data/docker -H fd://
+   systemctl stop docker
+    ps aux | grep -i docker | grep -v grep
+    systemctl daemon-reload
+  133  rsync -aqxP /var/lib/docker/ /new/path/docker
+  134  sudo rsync -aqxP /var/lib/docker/ /data/docker
+  135  systemctl start docker
+  136  systemctl status docker
+  137  df -h
+  138  docker pull store/elastic/metricbeat:7.0.0-alpha2
+  139  df -h
